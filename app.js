@@ -1,6 +1,6 @@
 var app = angular.module('app', ['ngRoute']);
 
-app.config(['$routeProvider', function($routeProvider) {
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
 	.when('/angular',{
 			controller: 'AngularController',
@@ -18,17 +18,15 @@ app.config(['$routeProvider', function($routeProvider) {
 			redirectTo: '/angular'
 		});
 		
-	//$locationProvider.html5Mode(true);
+	$locationProvider.html5Mode(true);
 
 }]);
 
-app.config(['$locationProvider', function($locationProvider) {
-	$locationProvider.html5Mode(true);
-}])
-
+/*
 app.controller('AngularController', ['$scope','$routeParams', function($scope, $routeParams){
-	$scope.params = $routeParams;
+//	$scope.params = $routeParams;
 	console.log($routeParams);
 	console.log($scope.apiType);
 	console.log($scope.method);
 }]);
+*/
