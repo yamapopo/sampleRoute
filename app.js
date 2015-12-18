@@ -24,6 +24,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
 
 app.controller('AngularController', ['$scope','$routeParams', function($scope, $routeParams){
+	$scope.params = $routeParams;
 	console.log($routeParams);
 	console.log($scope.apiType);
 	console.log($scope.method);
