@@ -29,3 +29,4 @@ app.controller('AngularController', ['$scope','$routeParams', function($scope, $
 	console.log($scope.apiType);
 	console.log($scope.method);
 }]);
+
