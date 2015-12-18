@@ -18,10 +18,13 @@ app.config(['$routeProvider', function($routeProvider) {
 			redirectTo: '/angular'
 		});
 		
-	// $locationProvider.html5Mode(true);
+	//$locationProvider.html5Mode(true);
 
 }]);
 
+app.config(['$locationProvider', function($locationProvider) {
+	$locationProvider.html5Mode(true);
+}])
 
 app.controller('AngularController', ['$scope','$routeParams', function($scope, $routeParams){
 	$scope.params = $routeParams;
