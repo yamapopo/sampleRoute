@@ -15,7 +15,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 			templateUrl: 'partials/angular-api-method.html'
 		})
 		.otherwise({
-			redirectTo: '/angular'
+			redirectTo: '/index.html'
 		});
 		
 	$locationProvider.html5Mode(true);
